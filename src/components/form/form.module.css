@@ -1,0 +1,209 @@
+.cover {
+  background-color: #525461;
+  height: fit-content;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loadingIcon {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #ccc;
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.coverForm {
+  background-image: url("assets/images/backgroundForm.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80%;
+  height: 750px;
+  border-radius: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.navbar {
+  margin-top: 30px;
+  margin-bottom: 150px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logoLink {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.logoLink:link,
+.logoLink:visited {
+  text-decoration: none;
+}
+
+.logoLink:hover,
+.logoLink:active {
+  text-decoration: none;
+  color: white;
+}
+
+.menuLink {
+  color: rgb(158, 158, 158);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.menuLink:link,
+.menuLink:visited {
+  text-decoration: none;
+}
+
+.menuLink:hover,
+.menuLink:active {
+  text-decoration: none;
+  color: rgb(158, 158, 158);
+}
+
+.menu {
+  text-align: center;
+}
+
+.start {
+  color: rgb(158, 158, 158);
+  font-weight: bold;
+  margin-left: 15%;
+}
+
+.login {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-left: 15%;
+}
+
+.member {
+  color: rgb(158, 158, 158);
+  margin-top: 10px;
+  margin-left: 15%;
+}
+
+.create {
+  color: #1c90f7;
+  text-decoration: none;
+}
+
+.coverInputGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.coverInput {
+  width: 70%;
+  color: white;
+  display: flex;
+}
+
+.Input {
+  background-color: #333645;
+  color: white;
+  border: none;
+  border-radius: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.Input:active,
+.Input:hover,
+.Input:focus {
+  background-color: #333645;
+  color: white;
+  box-shadow: none;
+}
+
+.iconInput {
+  background-color: #333645;
+  border: none;
+  border-radius: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.errors {
+  margin-top: -20px;
+  color: red;
+  font-weight: bold;
+}
+
+.isVisiblePwd{
+  cursor: pointer;
+}
+
+.invalid {
+  border-top: solid red 1px;
+  border-left: solid red 1px;
+  border-bottom: solid red 1px;
+}
+
+.invalid:active,
+.invalid:hover,
+.invalid:focus {
+  box-shadow: none !important;
+}
+
+.invalidIcon {
+  border-top: solid red 1px;
+  border-right: solid red 1px;
+  border-bottom: solid red 1px;
+}
+
+.coverButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c90f7;
+  width: 50%;
+  height: 50px;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-top: 40px;
+  font-size: 20px;
+}
